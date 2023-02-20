@@ -22,4 +22,6 @@ git commit -m 'deploy'
 # 如果是部署到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:Groot303/xztx.git master:gh-pages
 
+chmod +x deploy.sh
+
 cd -
