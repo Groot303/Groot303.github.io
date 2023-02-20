@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     title: "60岁coder",
     description: "just playing around",
-    base: '/xztx/',
+    base: '/zlblog/',
     themeConfig: {
         nav: [
             // { text: 'Guide', link: '/guide', activeMatch: '/guide/what-is-vitepress' },
