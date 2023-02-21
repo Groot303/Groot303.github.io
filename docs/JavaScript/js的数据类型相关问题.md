@@ -6,7 +6,7 @@ tags:
  - js基础
 sidebar: auto
 ---
-
+# {{ $frontmatter.title }}
 
 :boom: **js的数据类型和区别**
 - 基本类型：number、string、boolean、symbol 、null、undefined  6种、

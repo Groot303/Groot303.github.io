@@ -7,7 +7,7 @@ tags:
 sidebar: auto
 ---
 
-
+# {{ $frontmatter.title }}
 :boom: **深、浅拷贝**
 
 :one: 浅拷贝：拷贝了对象内存地址，当原对象发生变化的时候，拷贝对象也跟着变化
