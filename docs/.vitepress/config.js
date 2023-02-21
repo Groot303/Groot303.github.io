@@ -93,7 +93,6 @@ export default defineConfig({
                 text: 'bug万象集',
                 items: [
                     { text: '博客搭建', link: '/project/博客搭建' },
-                    { text: '博客搭建', link: '/project/博客搭建' },
                 ],
                 collapsible: true,
                 collapsed: true
