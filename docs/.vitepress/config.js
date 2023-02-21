@@ -3,7 +3,15 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     title: "Just Playing Around",
     description: "just playing around",
+    head: [
+        ['link', { rel: 'icon', href: 'logo.png' }]
+    ],
     themeConfig: {
+        algolia: {
+            appId: '...',
+            apiKey: '...',
+            indexName: '...'
+        },
         nav: [
 
             {
@@ -37,7 +45,8 @@ export default defineConfig({
                 items: [
                     { text: '基础知识', link: '/ES6/ES6基础知识' },
                 ],
-
+                collapsible: true,
+                collapsed: true
             }],
             '/Vue': [{
                     text: 'Vue基础',
@@ -47,7 +56,9 @@ export default defineConfig({
                         { text: 'vue3和vue2的区别', link: '/Vue基础/vue3和vue2的区别' },
                         { text: 'MVC、MVP、MVVM', link: '/Vue基础/MVC、MVP、MVVM' },
 
-                    ]
+                    ],
+                    collapsible: true,
+                    collapsed: true
                 },
                 {
                     text: 'Vue核心插件',
@@ -56,7 +67,9 @@ export default defineConfig({
                         { text: 'vue-router基础', link: '/Vue核心插件/vue-router基础' },
                         { text: '刷新页面vuex状态丢失', link: '/Vue核心插件/刷新页面vuex状态丢失' },
                         { text: '前端路由', link: '/Vue核心插件/前端路由' },
-                    ]
+                    ],
+                    collapsible: true,
+                    collapsed: true
                 },
                 {
                     text: 'Vue原理',
@@ -64,8 +77,11 @@ export default defineConfig({
                         { text: 'vue源码', link: '/Vue原理/vue源码' },
                         { text: 'vue的双向数据绑定原理', link: '/Vue原理/vue的双向数据绑定原理' },
                         { text: 'vue3的数据响应式原理', link: '/Vue原理/vue3的数据响应式原理' },
-                    ]
+                    ],
+                    collapsible: true,
+                    collapsed: true
                 },
+
             ],
             // '/浏览器原理': [{
             //     text: '浏览器原理',
