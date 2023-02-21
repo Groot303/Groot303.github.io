@@ -22,7 +22,7 @@ export default defineConfig({
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' }
                 ]
             },
-            { text: '项目问题', link: '/project', activeMatch: '/project' },
+            { text: '项目问题', link: '/project/index' },
             { text: '关于知识库', link: '/about/index' },
             { text: '生活思考', link: '/think/index' },
         ],
@@ -89,6 +89,15 @@ export default defineConfig({
             //         { text: 'cookie、session、token', link: '/浏览器原理/cookie、session、token' },
             //     ],
             // }]
+            '/project': [{
+                text: 'bug万象集',
+                items: [
+                    { text: '博客搭建', link: '/project/博客搭建' },
+                    { text: '博客搭建', link: '/project/博客搭建' },
+                ],
+                collapsible: true,
+                collapsed: true
+            }]
         }
     }
 
