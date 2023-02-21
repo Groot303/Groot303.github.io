@@ -7,7 +7,7 @@ tags:
 sidebar: 
  - 'auto'
 ---
-
+# {{ $frontmatter.title }}
 ## vue2的响应式原理存在的问题
 
 - 新增属性、删除属性，界面不会更新

@@ -5,7 +5,7 @@ categories:
 tags:
  - vuex
 ---
-
+# {{ $frontmatter.title }}
 
 ## what vuex?
 * 专门用于存储管理所有组件的状态的库，简单来说就是用来管理项目组件需要共享的一些数据的容器

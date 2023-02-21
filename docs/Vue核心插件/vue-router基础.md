@@ -6,7 +6,7 @@ tags:
  - vue-router
 
 ---
-
+# {{ $frontmatter.title }}
 ## 全局路由钩子
 - router.beforeEach 全局前置守卫，进入路由之前，<font color= red> 可用于登录验证、全局路由loading 、路由拦截</font>等
 - router.beforeResolve 全局解析守卫，在 beforeRouteEnter 之后调用

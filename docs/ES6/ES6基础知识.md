@@ -6,6 +6,8 @@ tags:
  - ES6基础
 ---
 
+# {{ $frontmatter.title }}
+
 :boom: **var、let、const**
 
 - var存在变量提升

@@ -5,6 +5,7 @@ categories:
 tags:
  - vue2基础
 ---
+# {{ $frontmatter.title }}
 
 ## computer和methods区别
 -  计算属性是基于它们的响应式依赖进行缓存的，只在相关响应式依赖发生变化时才会重新求值，多次访问该属性时，会返回之前的计算结果，不必再次执行函数。

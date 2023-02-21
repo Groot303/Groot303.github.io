@@ -7,7 +7,7 @@ tags:
 sidebar: 
  - 'auto'
 ---
-
+# {{ $frontmatter.title }}
 ## setup
 + 在setup中避免使用this，因为他在beforeCreate之前执行，找不到组件实例
 + setup接收两个参数

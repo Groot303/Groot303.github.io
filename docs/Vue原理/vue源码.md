@@ -7,7 +7,7 @@ tags:
  - vue2原理
 
 ---
-
+# {{ $frontmatter.title }}
 ## vue的构造函数
 - 源码位置：src\core\instance\index.js
 ```js

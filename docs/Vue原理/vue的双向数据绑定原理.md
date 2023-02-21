@@ -6,7 +6,7 @@ tags:
  - vue2原理
 
 ---
-
+# {{ $frontmatter.title }}
 ## 双向绑定过程
 
 1. new Vue()首先执行初始化，对data劫持进行响应化处理（利用Object.defineProperty()），这个过程发生Observe中
