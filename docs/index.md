@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入博客
-      link: /JavaScript/js的基础问题
+      link: /JavaScript/
 
 features:
   - icon: ⚡️
