@@ -17,6 +17,7 @@ export default defineConfig({
             {
                 text: '笔记分类',
                 items: [
+                    { text: 'html', link: '/html/基础知识' },
                     { text: 'JavaScript', link: '/JavaScript/' },
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' }
@@ -27,6 +28,16 @@ export default defineConfig({
             { text: '生活思考', link: '/think/index' },
         ],
         sidebar: {
+            '/html': [{
+                text: 'html',
+                items: [
+                    { text: '基础知识', link: '/html/基础知识' },
+                    { text: 'html5知识', link: '/html/html5' },
+
+                ],
+                collapsible: true,
+                collapsed: true
+            }],
             '/JavaScript': [{
                 text: 'JavaScript',
                 items: [
