@@ -7,18 +7,18 @@ export default defineConfig({
         ['link', { rel: 'icon', href: 'logo.png' }]
     ],
     themeConfig: {
+        //搜索框
         algolia: {
             appId: '...',
             apiKey: '...',
             indexName: '...'
         },
         nav: [
-
+            //导航栏
             {
                 text: '笔记分类',
                 items: [
-                    { text: 'html', link: '/html/基础知识' },
-                    { text: 'JavaScript', link: '/JavaScript/' },
+                    { text: 'html&css&js', link: '/html&css&js/html/基础知识' },
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' }
                 ]
@@ -28,29 +28,41 @@ export default defineConfig({
             { text: '生活思考', link: '/think/index' },
         ],
         sidebar: {
-            '/html': [{
-                text: 'html',
-                items: [
-                    { text: '基础知识', link: '/html/基础知识' },
-                    { text: 'html5知识', link: '/html/html5' },
+            '/html&css&js': [{
+                    text: 'html',
+                    items: [
+                        { text: '基础知识', link: '/html&css&js/html/基础知识' },
+                        { text: 'html5知识', link: '/html&css&js/html/html5' },
 
-                ],
-                collapsible: true,
-                collapsed: true
-            }],
-            '/JavaScript': [{
-                text: 'JavaScript',
-                items: [
-                    { text: 'js的基础问题', link: '/JavaScript/js的基础问题' },
-                    { text: 'js的数据类型相关问题', link: '/JavaScript/js的数据类型相关问题' },
-                    { text: 'call、apply、bind', link: '/JavaScript/call、apply、bind' },
-                    { text: '执行上下文', link: '/JavaScript/执行上下文' },
-                    { text: '原型和原型链', link: '/JavaScript/原型和原型链' },
-                    { text: '闭包', link: '/JavaScript/闭包' },
-                ],
-                collapsible: true,
-                collapsed: true
-            }],
+                    ],
+                    collapsible: true,
+                    collapsed: true
+                },
+                {
+                    text: 'css',
+                    items: [
+                        { text: 'css基础知识', link: '/html&css&js/css/css基础知识' },
+                        { text: 'css3', link: '/html&css&js/css/css3' },
+                    ],
+                    collapsible: true,
+                    collapsed: true
+                },
+                {
+                    text: 'js',
+                    items: [
+                        { text: 'js的基础问题', link: '/html&css&js/JavaScript/js的基础问题' },
+                        { text: 'js的数据类型相关问题', link: '/html&css&js/JavaScript/js的数据类型相关问题' },
+                        { text: 'call、apply、bind', link: '/html&css&js/JavaScript/call、apply、bind' },
+                        { text: '执行上下文', link: '/html&css&js/JavaScript/执行上下文' },
+                        { text: '原型和原型链', link: '/html&css&js/JavaScript/原型和原型链' },
+                        { text: '闭包', link: '/html&css&js/JavaScript/闭包' },
+                    ],
+                    collapsible: true,
+                    collapsed: true
+                },
+
+            ],
+
             '/ES6': [{
                 text: 'ES6',
                 items: [
@@ -59,6 +71,7 @@ export default defineConfig({
                 collapsible: true,
                 collapsed: true
             }],
+
             '/Vue': [{
                     text: 'Vue基础',
                     items: [
@@ -107,7 +120,7 @@ export default defineConfig({
                 ],
                 collapsible: true,
                 collapsed: true
-            }]
+            }, ]
         }
     }
 
