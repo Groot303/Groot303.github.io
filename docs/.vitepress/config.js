@@ -20,7 +20,11 @@ export default defineConfig({
                 items: [
                     { text: 'html&css&js', link: '/html&css&js/html/基础知识' },
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
-                    { text: 'Vue', link: '/Vue基础/vue2基础知识' }
+                    { text: 'Vue', link: '/Vue基础/vue2基础知识' },
+                    { text: 'http', link: '/http/知识总结' },
+                    { text: 'webpack', link: '/webpack/知识总结' },
+                    { text: 'TypeScript', link: '/TypeScript/知识总结' },
+                    { text: '浏览器原理', link: '/浏览器原理/知识总结' }
                 ]
             },
             { text: '项目问题', link: '/project/index' },
@@ -107,12 +111,33 @@ export default defineConfig({
                 },
 
             ],
-            // '/浏览器原理': [{
-            //     text: '浏览器原理',
-            //     items: [
-            //         { text: 'cookie、session、token', link: '/浏览器原理/cookie、session、token' },
-            //     ],
-            // }]
+            '/http': [{
+                text: 'http',
+                items: [
+                    { text: '知识总结', link: '/http/知识总结' },
+                    { text: 'web安全', link: '/http/https' },
+
+                ],
+            }],
+            '/webpack': [{
+                text: 'webpack',
+                items: [
+                    { text: '知识总结', link: '/webpack/知识总结' },
+                ],
+            }],
+            '/TypeScript': [{
+                text: 'TypeScript',
+                items: [
+                    { text: '知识总结', link: '/TypeScript/知识总结' },
+                ],
+            }],
+            '/浏览器原理': [{
+                text: '浏览器原理',
+                items: [
+                    { text: '知识总结', link: '/浏览器原理/知识总结' },
+                    { text: 'web安全', link: '/浏览器原理/web安全' },
+                ],
+            }],
             '/project': [{
                 text: 'bug万象集',
                 items: [
