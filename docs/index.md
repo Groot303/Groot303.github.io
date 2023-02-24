@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入博客
-      link: /html/基础知识
+      link: html&css&js/html/基础知识
 
 features:
   - icon: ⚡️
