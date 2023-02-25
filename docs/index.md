@@ -12,6 +12,10 @@ hero:
     - theme: brand
       text: 进入博客
       link: html&css&js/html/基础知识
+    - theme: brand
+      text: github
+      link: https://github.com/Groot303/Groot303.github.io
+
 
 features:
   - icon: ⚡️
