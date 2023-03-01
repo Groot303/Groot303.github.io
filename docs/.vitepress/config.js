@@ -8,11 +8,11 @@ export default defineConfig({
     ],
     themeConfig: {
         //搜索框
-        algolia: {
-            appId: '...',
-            apiKey: '...',
-            indexName: '...'
-        },
+        // algolia: {
+        //     appId: '...',
+        //     apiKey: '...',
+        //     indexName: '...'
+        // },
         nav: [
             //导航栏
             {
@@ -93,7 +93,6 @@ export default defineConfig({
                     items: [
                         { text: 'vuex基础', link: '/Vue核心插件/vuex基础' },
                         { text: 'vue-router基础', link: '/Vue核心插件/vue-router基础' },
-                        { text: '刷新页面vuex状态丢失', link: '/Vue核心插件/刷新页面vuex状态丢失' },
                         { text: '前端路由', link: '/Vue核心插件/前端路由' },
                     ],
                     collapsible: true,
@@ -140,11 +139,31 @@ export default defineConfig({
                 ],
             }],
             '/project': [{
-                text: 'bug万象集',
+                text: '博客',
                 items: [
                     { text: '博客搭建', link: '/project/博客搭建' },
                 ],
-                collapsible: true,
+                // collapsible: true,
+                collapsed: true
+            }, {
+                text: '组件库hview-ui',
+                items: [
+                    { text: '关于组件封装', link: 'project/hview-ui/组件封装' },
+                    { text: 'vue3的props类型标注', link: 'project/hview-ui/props' },
+                    { text: 'radio', link: 'project/hview-ui/radio' },
+                    { text: 'card', link: 'project/hview-ui/card' },
+                    { text: 'space', link: 'project/hview-ui/space' },
+                ],
+                // collapsible: true,
+                collapsed: true
+            }, {
+                text: '宿舍系统',
+                items: [
+                    { text: 'jwt', link: '/project/宿舍系统/jwt' },
+                    { text: '刷新页面vuex状态丢失', link: '/project/宿舍系统/刷新页面vuex状态丢失' },
+
+                ],
+                // collapsible: true,
                 collapsed: true
             }, ]
         }
