@@ -61,6 +61,7 @@ export default defineConfig({
                         { text: '执行上下文', link: '/html&css&js/JavaScript/执行上下文' },
                         { text: '原型和原型链', link: '/html&css&js/JavaScript/原型和原型链' },
                         { text: '闭包', link: '/html&css&js/JavaScript/闭包' },
+                        { text: '函数柯里化', link: '/html&css&js/JavaScript/函数柯里化' },
                     ],
                     collapsible: true,
                     collapsed: true
@@ -135,6 +136,7 @@ export default defineConfig({
             '/浏览器原理': [{
                 text: '浏览器原理',
                 items: [
+                    { text: '垃圾回收机制', link: '/浏览器原理/垃圾回收机制' },
                     { text: '知识总结', link: '/浏览器原理/知识总结' },
                     { text: 'web安全', link: '/浏览器原理/web安全' },
                 ],
