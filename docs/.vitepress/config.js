@@ -22,13 +22,14 @@ export default defineConfig({
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' },
                     { text: 'webpack', link: '/webpack/知识总结' },
-                    { text: 'TypeScript', link: '/TypeScript/知识总结' },
+                    // { text: 'TypeScript', link: '/TypeScript/知识总结' },
                     { text: '计算机网络', link: '/计算机网络/知识总结' },
                     { text: '浏览器原理', link: '/浏览器原理/知识总结' },
                 ]
             },
             { text: '项目问题', link: '/project/index' },
             { text: '关于知识库', link: '/about/index' },
+            { text: '一些有趣的知识', link: '/reprint/css/index' },
             { text: '生活思考', link: '/think/index' },
         ],
         sidebar: {
@@ -117,12 +118,12 @@ export default defineConfig({
                     { text: '知识总结', link: '/webpack/知识总结' },
                 ],
             }],
-            '/TypeScript': [{
-                text: 'TypeScript',
-                items: [
-                    { text: '知识总结', link: '/TypeScript/知识总结' },
-                ],
-            }],
+            // '/TypeScript': [{
+            //     text: 'TypeScript',
+            //     items: [
+            //         { text: '知识总结', link: '/TypeScript/知识总结' },
+            //     ],
+            // }],
             '/计算机网络': [{
                 text: 'http',
                 items: [
@@ -148,11 +149,11 @@ export default defineConfig({
             }, {
                 text: '组件库hview-ui',
                 items: [
-                    { text: '关于组件封装', link: 'project/hview-ui/组件封装' },
+                    // { text: '关于组件封装', link: 'project/hview-ui/组件封装' },
                     { text: 'vue3的props类型标注', link: 'project/hview-ui/props' },
-                    { text: 'radio', link: 'project/hview-ui/radio' },
-                    { text: 'card', link: 'project/hview-ui/card' },
-                    { text: 'space', link: 'project/hview-ui/space' },
+                    // { text: 'radio', link: 'project/hview-ui/radio' },
+                    // { text: 'card', link: 'project/hview-ui/card' },
+                    // { text: 'space', link: 'project/hview-ui/space' },
                 ],
                 // collapsible: true,
                 collapsed: true
@@ -165,7 +166,14 @@ export default defineConfig({
                 ],
                 // collapsible: true,
                 collapsed: true
-            }, ]
+            }, ],
+            '/reprint': [{
+                text: 'css',
+                items: [
+                    { text: '博客汇总', link: '/reprint/css/博客汇总' },
+                    { text: 'web安全', link: '/reprint/web安全' },
+                ],
+            }],
         }
     }
 
