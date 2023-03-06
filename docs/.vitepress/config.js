@@ -137,6 +137,7 @@ export default defineConfig({
                 text: '浏览器原理',
                 items: [
                     { text: '垃圾回收机制', link: '/浏览器原理/垃圾回收机制' },
+                    { text: 'v8的垃圾回收机制', link: '/浏览器原理/v8的垃圾回收机制' },
                     { text: '知识总结', link: '/浏览器原理/知识总结' },
                     { text: 'web安全', link: '/浏览器原理/web安全' },
                 ],
