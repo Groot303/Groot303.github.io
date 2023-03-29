@@ -82,4 +82,4 @@ import{_ as a,c as l,a as s,b as p,t as o,d as t,o as e}from"./app.8f7889f4.js";
 <span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">//     fn.apply(this instanceof Fn ? new fn(...arguments) : obj, args.concat(...arguments))</span></span>
 <span class="line"><span style="color:#89DDFF;">    </span><span style="color:#676E95;font-style:italic;">// }</span></span>
 <span class="line"><span style="color:#89DDFF;">}</span></span>
-<span class="line"></span></code></pre></div>`,14);function D(n,A,i,C,d,u){return e(),l("div",null,[s("h1",r,[p(o(n.$frontmatter.title)+" ",1),F]),y])}const h=a(c,[["render",D]]);export{g as __pageData,h as default};
+<span class="line"></span></code></pre></div><p>当bind配合new关键字使用的时候，this会失效，因为使用new关键字后，构造函数的this指向的是新的实例对象</p>`,15);function D(n,A,i,C,d,u){return e(),l("div",null,[s("h1",r,[p(o(n.$frontmatter.title)+" ",1),F]),y])}const h=a(c,[["render",D]]);export{g as __pageData,h as default};
