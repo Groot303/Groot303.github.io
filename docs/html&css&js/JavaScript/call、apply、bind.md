@@ -130,4 +130,5 @@ Function.prototype._bind = function(obj) {
 }
 ```
 
+当bind配合new关键字使用的时候，this会失效，因为使用new关键字后，构造函数的this指向的是新的实例对象
 
