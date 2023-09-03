@@ -8,6 +8,31 @@ sidebar: auto
 ---
 
 # {{ $frontmatter.title }}
+:boom: 事件模型
++ 事件流：捕获、目标、冒泡阶段
++ 事件模型：事件捕获和事件冒泡
+
+:boom: 事件捕获和事件冒泡
++ 微软提出事件冒泡，网景提出事件捕获，后面统一成先捕获再冒泡，由第三个参数决定在什么阶段执行
+```js
+  btn1.addEventListener('click',function (){
+    alert('btn1')
+  },true)
+  //true是捕获执行，false是冒泡执行，默认是false
+```
++ 事件代理的作用就是方便为多个列表绑定事件，还有动态创建列表时候不用绑定和解绑事件
++ 如果一个元素同时绑定了两个事件，既有冒泡事件，又有捕获事件时，应该执行几次，先后顺序是什么？
+  + 1.如果多次绑定事件的元素是目标元素，且都是冒泡执行（或者都是捕获执行）的话，那么执行时就按照代码顺序执行（注意：这里说的按照绑定顺序执行是指利用addEventListener来绑定事件的；如果是利用attachEvent来绑定事件的，就是以绑定时的相反顺序执行），其他元素就按照先捕获后冒泡的顺序执行。
+  + 2.如果多次绑定事件的元素不是目标元素，先捕获，后目标元素，最后冒泡
+
+:boom: 阻止事件冒泡
+```js
+e.stopPropagation();
+```
+
+:boom: 事件流模型的应用
+- 事件委托（也叫事件代理）：指的是利用事件冒泡原理，只需给外层父容器添加事件，若内层子元素有点击事件，则会冒泡到父容器上，这就是事件委托，简单说就是：子元素委托它们的父级代为执行事件。
+
 :boom: **深、浅拷贝**
 
 :one: 浅拷贝：拷贝了对象内存地址，当原对象发生变化的时候，拷贝对象也跟着变化
@@ -30,13 +55,14 @@ sidebar: auto
 - 尾部：pop、push（可传入多个参数）
 - 首部：shift、unshift、
 - 数组拼接：concat ，返回的是拼接好的数组，不影响原数组
-- 数组截取：slice，不影响原数组
-- 数组插入：splice，影响原数组
+- 数组截取：slice(开始位置，结束位置)，不影响原数组
+- 数组插入：splice(插入位置，删除个数，插入元素)，影响原数组；splice(0,1)表示从第0个元素开始，删掉一个元素，返回的是删掉的那个元素数组
 - 查找特定项的索引：indexof、lastIndexOf
 - 迭代方法：every、some、filter、map、forEach
 - 数组归并：reduce、reduceRight
 - 重排序：reverse、sort
-- 数组和字符串的转换方法：toString、toLocalString、join（可以指定转为字符串时的分隔符）
+- 数组转成字符串：join(用于连接数组元素的值)
+- 数组转成字符串：toString，元素用逗号隔开
 
 :boom: **什么是Dom和Bom**
 - DOM ：文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。
@@ -59,13 +85,13 @@ sidebar: auto
 
 |方法	   |是否改变原数组	         |特点
 |------|---------|--------|
-|forEach	|否	|数组方法，不改变原数组，没有返回值
-|map	    |否	|数组方法，不改变原数组，有返回值，可链式调用
-|filter	    |否	|数组方法，过滤数组，返回包含符合条件的元素的数组，可链式调用
-|for...of	|否	|for...of遍历具有Iterator迭代器的对象的属性，返回的是数组的元素、对象的属性值，不能遍历普通的|obj对象，将异步循环变成同步循环
-|every和some	    |否|	数组方法，some()只要有一个是true，便返回true；而every()只要有一个是false，便返回|false.
-|find和findIndex	|否|	数组方法，find()返回的是第一个符合条件的值；findIndex()返回的是第一个返回条件的|值的索引值
-|reduce和reduceRight|否	|数组方法，reduce()对数组正序操作；reduceRight()对数组逆序操作
+|forEach	|否	|为每个数组元素调用函数，没有返回值，不改变原数组
+|map	    |否	|为每个数组元素调用函数，有返回值，不改变原数组，可链式调用
+|filter	    |否	|过滤数组，返回包含符合条件的元素的数组，可链式调用
+|for...of	|否	|for...of遍历具有Iterator迭代器的对象的属性，返回的是数组的元素、对象的属性值，不能遍历普通的obj对象，将异步循环变成同步循环
+|every和some	    |否|	some()只要有一个是true，便返回true；而every()只要有一个是false，便返回false.
+|find和findIndex	|否|	find()返回的是第一个符合条件的值；findIndex()返回的是第一个返回条件的|值的索引值
+|reduce和reduceRight|否	|reduce()对数组正序操作；reduceRight()对数组逆序操作
 
 
 :boom: **forEach 和 map 的区别**
@@ -102,7 +128,7 @@ sidebar: auto
 
 - instanceof
 - constructor：这种方式不是很安全，因为 constructor 属性可以被改写
-- Object.prototype.toString
+- Object.prototype.toString.call()
 
 :boom: **js脚本延迟加载的方式**
 
