@@ -169,14 +169,24 @@ export default defineConfig({
                 ],
                 // collapsible: true,
                 collapsed: true
+            }, 
+            {
+                text: '其他',
+                items: [
+                    { text: 'ResizeObserver', link: '/project/其他/resizeObserver' },
+                    // { text: '刷新页面vuex状态丢失', link: '/project/宿舍系统/刷新页面vuex状态丢失' },
+
+                ],
+                // collapsible: true,
+                collapsed: true
             }, ],
             '/reprint': [{
                 text: 'css',
                 items: [
                     { text: '博客汇总', link: '/reprint/css/博客汇总' },
-                    { text: 'web安全', link: '/reprint/web安全' },
                 ],
-            }],
+            },
+            ],
         }
     }
 
