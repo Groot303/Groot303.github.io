@@ -56,7 +56,7 @@ e.stopPropagation();
 - 首部：shift、unshift、
 - 数组拼接：concat ，返回的是拼接好的数组，不影响原数组
 - 数组截取：slice(开始位置，结束位置)，不影响原数组
-- 数组插入：splice(插入位置，删除个数，插入元素)，影响原数组；splice(0,1)表示从第0个元素开始，删掉一个元素，返回的是删掉的那个元素数组
+- 数组插入：splice(操作位置，删除个数，插入元素)，影响原数组；splice(0,1)表示从第0个元素开始，删掉一个元素，返回的是删掉的那个元素数组
 - 查找特定项的索引：indexof、lastIndexOf
 - 迭代方法：every、some、filter(返回符合要求的数组)、map（返回操作后的新数组）、forEach
 - 数组归并：reduce、reduceRight

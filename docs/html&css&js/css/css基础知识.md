@@ -32,8 +32,17 @@ tags:
 2. 定位 + margin：-自身宽高的一半 + top：50% + left：50%
 3. 定位 + transform：translate（-50%，-50%） + top：50% + left：50%
 4. flex布局：利用align-items: center和justify-content: center（元素未知宽高）
-5. table布局：设置父元素为display:table-cell，vertical：center，text-align：center。子元素设置 display: inline-block。利用vertical和text-align可以让所有的行内块级元素水平垂直居中
+5. table布局：
+  - 设置父元素为display:table-cell，vertical-align：middle，text-align：center。
+  - 子元素设置 display: inline-block。利用vertical-align和text-align可以让所有的行内块级元素水平垂直居中
+  - display: table-cell; 相当于td标签，
+    - 设置vertical-align，td里面的所有块级非块级元素（除了脱标元素）都会垂直居中，
+    - 设置text-align, td里面的所有非块级元素（脱标元素除外）都会水平居中，所以把子元素设置成inline元素就能实现水平居中
 6. grid网格布局：和flex配置一样（元素未知宽高）
+7. 父元素设置为弹性盒子，子元素 margin: auto。可让子元素水平垂直居中。
+  - margin: auto。只对块级元素有作用，且要设置with。auto是相对于弹性盒子来计算的，普通盒子只有水平方向是弹性的，垂直方向弹性，所以把父元素设置成弹性盒子就能生效。
+  
+
 
 ## flex布局
 设置flex布局后，子元素的float、clear、vertical-align失效
