@@ -55,6 +55,7 @@ export default defineConfig({
             {
                 text: 'js',
                 items: [
+                    { text: 'js数组的方法', link: '/html&css&js/JavaScript/数组的方法' },
                     { text: 'js的基础问题', link: '/html&css&js/JavaScript/js的基础问题' },
                     { text: 'js的数据类型相关问题', link: '/html&css&js/JavaScript/js的数据类型相关问题' },
                     { text: 'call、apply、bind', link: '/html&css&js/JavaScript/call、apply、bind' },

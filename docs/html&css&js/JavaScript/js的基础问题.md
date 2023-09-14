@@ -27,7 +27,9 @@ sidebar: auto
 
 :boom: 阻止事件冒泡
 ```js
-e.stopPropagation();
+e.stopPropagation(); // 标准写法
+e.cancelBubble = true // ie6-8 利用这个属性
+// 两个结合可以解决兼容性
 ```
 
 :boom: 事件流模型的应用
@@ -51,18 +53,6 @@ e.stopPropagation();
 - 将构造函数的this指向空对象 
 - 判断函数的返回值类型，如果是值类型，返回创建的对象。如果是引用类型，就返回这个引用类型的对象
 
-:boom: **数组有哪些常用的方法**
-- 尾部：pop、push（可传入多个参数）
-- 首部：shift、unshift、
-- 数组拼接：concat ，返回的是拼接好的数组，不影响原数组
-- 数组截取：slice(开始位置，结束位置)，不影响原数组
-- 数组插入：splice(操作位置，删除个数，插入元素)，影响原数组；splice(0,1)表示从第0个元素开始，删掉一个元素，返回的是删掉的那个元素数组
-- 查找特定项的索引：indexof、lastIndexOf
-- 迭代方法：every、some、filter(返回符合要求的数组)、map（返回操作后的新数组）、forEach
-- 数组归并：reduce、reduceRight
-- 重排序：reverse、sort
-- 数组转成字符串：join(用于连接数组元素的值)
-- 字符串转成数组元素：split(' ')，元素用逗号隔开
 
 :boom: **什么是Dom和Bom**
 - DOM ：文档对象模型，它指的是把文档当做一个对象，这个对象主要定义了处理网页内容的方法和接口。
@@ -82,17 +72,12 @@ e.stopPropagation();
 
 ---------------
 
-:boom: **数组的遍历方法**
 
-|方法	   |是否改变原数组	         |特点
-|------|---------|--------|
-|forEach	|否	|为每个数组元素调用函数，没有返回值，不改变原数组
-|map	    |否	|为每个数组元素调用函数，有返回值，不改变原数组，可链式调用
-|filter	    |否	|过滤数组，返回包含符合条件的元素的数组，可链式调用
-|for...of	|否	|for...of遍历具有Iterator迭代器的对象的属性，返回的是数组的元素、对象的属性值，不能遍历普通的obj对象，将异步循环变成同步循环
-|every和some	    |否|	some()只要有一个是true，便返回true；而every()只要有一个是false，便返回false.
-|find和findIndex	|否|	find()返回的是第一个符合条件的值；findIndex()返回的是第一个返回条件的|值的索引值
-|reduce和reduceRight|否	|reduce()对数组正序操作；reduceRight()对数组逆序操作
+
+
+
+
+
 
 
 :boom: **forEach 和 map 的区别**
@@ -167,8 +152,7 @@ e.stopPropagation();
   - 浏览器端发起XMLHttpRequests请求
   - node端发起http请求
   - 支持Promise API
-  - 监听请求和返回
-  - 对请求和返回进行转化
+  - 拦截请求和响应
   - 取消请求
   - 自动转换json数据
   - 客户端支持抵御XSRF攻击
