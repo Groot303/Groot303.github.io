@@ -1,0 +1,1 @@
+import{_ as t,c as d,o as r,d as e}from"./app.122f0a03.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"html&css&js/JavaScript/数组的方法.md"}'),i={name:"html&css&js/JavaScript/数组的方法.md"},s=e("",6),o=[s];function l(a,c,n,h,p,_){return r(),d("div",null,o)}const m=t(i,[["render",l]]);export{u as __pageData,m as default};
