@@ -22,15 +22,16 @@ export default defineConfig({
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' },
                     { text: 'webpack', link: '/webpack/知识总结' },
-                    // { text: 'TypeScript', link: '/TypeScript/知识总结' },
+                    { text: 'TypeScript', link: '/TypeScript/知识总结' },
                     { text: '计算机网络', link: '/计算机网络/知识总结' },
                     { text: '浏览器原理', link: '/浏览器原理/知识总结' },
+                    { text: '前端工程化', link: '/前端工程化/eslint和prettier' },
                 ]
             },
             { text: '项目问题', link: '/project/index' },
             { text: '关于知识库', link: '/about/index' },
             { text: '一些有趣的知识', link: '/reprint/css/index' },
-            { text: '生活思考', link: '/think/index' },
+            // { text: '生活思考', link: '/think/index' },
         ],
         sidebar: {
             '/html&css&js': [{
@@ -120,12 +121,12 @@ export default defineConfig({
                     { text: '知识总结', link: '/webpack/知识总结' },
                 ],
             }],
-            // '/TypeScript': [{
-            //     text: 'TypeScript',
-            //     items: [
-            //         { text: '知识总结', link: '/TypeScript/知识总结' },
-            //     ],
-            // }],
+            '/TypeScript': [{
+                text: 'TypeScript',
+                items: [
+                    { text: '知识总结', link: '/TypeScript/知识总结' },
+                ],
+            }],
             '/计算机网络': [{
                 text: 'http',
                 items: [
@@ -141,6 +142,12 @@ export default defineConfig({
                     { text: 'v8的垃圾回收机制', link: '/浏览器原理/v8的垃圾回收机制' },
                     { text: '知识总结', link: '/浏览器原理/知识总结' },
                     { text: 'web安全', link: '/浏览器原理/web安全' },
+                ],
+            }],
+            '/前端工程化': [{
+                text: '前端工程化',
+                items: [
+                    { text: 'eslint和prettier', link: '/前端工程化/eslint和prettier' },
                 ],
             }],
             '/project': [{
