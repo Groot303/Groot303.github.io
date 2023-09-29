@@ -14,9 +14,12 @@ sidebar: auto
 - 基本类型在栈中存储，引用类型的数据在堆中存储，栈中存储的是引用地址
 
 :boom: **== 类型转化的规则**
--  string -> number
-- boolean -> number 
+- string -> number
+- boolean 与其他类型比较  boolean -> number 
 - object -> 原始类型
+- 引用类型与值类型比较，引用类型先转换成值类型
+- null == undefined
+- null, undefined, NaN 与其他类型都返回 false
 
 :boom: **Object.is( ) 和 === 、 == 的区别**
 - == 等会先进行类型转换，再进行值的比较，
