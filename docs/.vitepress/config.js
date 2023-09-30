@@ -119,6 +119,10 @@ export default defineConfig({
                 text: 'webpack',
                 items: [
                     { text: '知识总结', link: '/webpack/知识总结' },
+                    { text: 'webpack基本操作', link: '/webpack/webpack基本操作' },
+                    { text: 'webpack其他技巧配置', link: '/webpack/webpack其他技巧配置' },
+                    { text: 'webpack开发模式', link: '/webpack/开发模式' },
+                    { text: 'loader', link: '/webpack/loader' },
                 ],
             }],
             '/TypeScript': [{
