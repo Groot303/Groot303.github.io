@@ -5,7 +5,7 @@
 ##### 一、path：路径处理工具
 
 - basename: 路径最后一部分
-- dirname:  当前目录下
+- dirname:  文件夹的绝对路径
 - parse：解析路径对象
 - format：对象解析为路径，与parse相对
 - resolve：把一个路径解析为绝对路径
