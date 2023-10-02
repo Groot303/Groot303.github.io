@@ -21,7 +21,8 @@ export default defineConfig({
                     { text: 'html&css&js', link: '/html&css&js/html/基础知识' },
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' },
-                    { text: 'webpack', link: '/webpack/知识总结' },
+                    { text: 'Webpack', link: '/webpack/知识总结' },
+                    { text: 'Nodejs', link: '/Nodejs/node基础知识' },
                     { text: 'TypeScript', link: '/TypeScript/知识总结' },
                     { text: '计算机网络', link: '/计算机网络/知识总结' },
                     { text: '浏览器原理', link: '/浏览器原理/知识总结' },
@@ -125,10 +126,19 @@ export default defineConfig({
                     { text: 'loader', link: '/webpack/loader' },
                 ],
             }],
+            '/Node': [{
+                text: 'Nodejs',
+                items: [
+                    { text: 'node基础知识', link: '/Nodejs/node基础知识' },
+                    { text: 'express&koa', link: '/Nodejs/express&koa基本使用' },
+                    { text: 'node工程化工具', link: '/Nodejs/node工程化工具' },
+                ],
+            }],
             '/TypeScript': [{
                 text: 'TypeScript',
                 items: [
                     { text: '知识总结', link: '/TypeScript/知识总结' },
+                    { text: 'ts编译和配置', link: '/TypeScript/ts编译和配置' },
                 ],
             }],
             '/计算机网络': [{
