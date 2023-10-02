@@ -1,6 +1,6 @@
-## Node.js 基础知识
+# Node.js 基础知识
 
-### 常用工具模块
+## 常用工具模块
 
 ##### 一、path：路径处理工具
 
@@ -48,7 +48,7 @@ console.log(path.join("./a", "./b"));  // a/b
 :boom: node 所有异步操作都是通过回调获取结果的，比较容易形成回调地狱；几乎所有的回调第一个参数都是err，后面的才是结果。这也是 node 作者嫌弃的原因，后面写了deno
 
 
-### 文件操作
+## 文件操作
 
 ##### api 
 
@@ -69,28 +69,45 @@ fs.writeFile("./test.txt", "hello", function (err, res) { }) //异步版本
 const res = fs.writeFileSync("./test2.txt", "hello") // 同步版本
 ```
 
-##### 文件夹操作
+## 文件夹操作
 
 - readdir 读取
 - mkdir 创建
 - rmdir 删除
 - 拷贝和移动：没有直接api 只能遍历
 
-##### 常用的检测方法
+## 常用的检测方法
 
 - exits 是否存在
 - stat 获取文件的状态信息
 
-##### 一些好用的第三方库
+## 一些好用的第三方库
  
 - fs-extra 
 - compressing
     - .zip.compressDir： 压缩
     - .zip.uncompress：解压
 
-##### 一些高级的文件操作
+## 一些高级的文件操作
 
 - watch 监听（webpack中监听文件改变重新打包）
 - open 自由操作
 - read、write 自由读取和写入
 - writeStream、readStream 流形式操作
+
+## buffer和流
+
+:boom: buffer 可以理解为一个固定长度的字符串数组，存在于v8内存外，储存文件的二进制内容
+
+##### buffer相关操作
+
+1. 创建
+```node
+const bf1 = Buffer.alloc(10, '1')
+const bf2 = Buffer.from("hello") 
+console.log(bf1.toString());//1111111111
+```
+
+:boom: 流可以理解成一个管道
+
+当一个文件很大的时候，如果用buffer一次性读取会造成系统卡顿，所以可以使用流进行读取
