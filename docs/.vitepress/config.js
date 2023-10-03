@@ -16,17 +16,29 @@ export default defineConfig({
         nav: [
             //导航栏
             {
-                text: '笔记分类',
+                text: '前端基础',
                 items: [
                     { text: 'html&css&js', link: '/html&css&js/html/基础知识' },
                     { text: 'ES6', link: '/ES6/ES6基础知识' },
-                    { text: 'Vue', link: '/Vue基础/vue2基础知识' },
-                    { text: 'Webpack', link: '/webpack/知识总结' },
-                    { text: 'Nodejs', link: '/Nodejs/node基础知识' },
                     { text: 'TypeScript', link: '/TypeScript/知识总结' },
                     { text: '计算机网络', link: '/计算机网络/知识总结' },
                     { text: '浏览器原理', link: '/浏览器原理/知识总结' },
-                    { text: '前端工程化', link: '/前端工程化/eslint和prettier' },
+                ]
+            },
+            {
+                text: '前端框架',
+                items: [
+                    { text: 'Vue', link: '/Vue基础/vue2基础知识' },
+                ]
+            },
+
+            {
+                text: '前端工程化',
+                items: [
+                    { text: 'Webpack', link: '/webpack/webpack基本操作' },
+                    { text: 'Vite', link: '/Vite/vite概况' },
+                    { text: 'Nodejs', link: '/Nodejs/node基础知识' },
+                    { text: '项目搭建', link: '/项目搭建/eslint和prettier' },
                 ]
             },
             { text: '项目问题', link: '/project/index' },
@@ -119,11 +131,17 @@ export default defineConfig({
             '/webpack': [{
                 text: 'webpack',
                 items: [
-                    { text: '知识总结', link: '/webpack/知识总结' },
+                    /* { text: '知识总结', link: '/webpack/知识总结' },*/
                     { text: 'webpack基本操作', link: '/webpack/webpack基本操作' },
                     { text: 'webpack其他技巧配置', link: '/webpack/webpack其他技巧配置' },
                     { text: 'webpack开发模式', link: '/webpack/开发模式' },
-                    { text: 'loader', link: '/webpack/loader' },
+                    { text: 'loader&plugin', link: '/webpack/loader&plugin' },
+                ],
+            }],
+            '/Vite': [{
+                text: 'Vite',
+                items: [
+                    { text: 'vite概况', link: '/Vite/vite概况' },
                 ],
             }],
             '/Node': [{
@@ -158,10 +176,10 @@ export default defineConfig({
                     { text: 'web安全', link: '/浏览器原理/web安全' },
                 ],
             }],
-            '/前端工程化': [{
-                text: '前端工程化',
+            '/项目搭建': [{
+                text: '项目搭建',
                 items: [
-                    { text: 'eslint和prettier', link: '/前端工程化/eslint和prettier' },
+                    { text: 'eslint和prettier', link: '/项目搭建/eslint和prettier' },
                 ],
             }],
             '/project': [{
