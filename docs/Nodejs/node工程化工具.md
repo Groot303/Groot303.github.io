@@ -163,8 +163,6 @@ module.exports = myPlugin
 // 可以在 done 周期进行 dist 文件压缩 自动上传等功能的开发
 ```
 
-### webpack loader
-
 ### 小工具
 
 - 日常开发的过程中的一些重复的操作、数据操作、文件操作等等都可以通过 node 编写一些的小工具来解决

@@ -11,7 +11,7 @@
 - resolve：把一个路径解析为绝对路径
 - join：路径拼接
 
-```node
+```js
 const path = require("path");
 let demo = "./src/a/b/c.js"
 let p = path.parse(demo)
@@ -62,8 +62,7 @@ console.log(path.join("./a", "./b"));  // a/b
 - rename 移动（重命名）
 - copyFile 拷贝
 
-```node
-
+```js
 const fs = require('fs')
 fs.writeFile("./test.txt", "hello", function (err, res) { }) //异步版本
 const res = fs.writeFileSync("./test2.txt", "hello") // 同步版本
@@ -102,7 +101,7 @@ const res = fs.writeFileSync("./test2.txt", "hello") // 同步版本
 ##### buffer相关操作
 
 1. 创建
-```node
+```js
 const bf1 = Buffer.alloc(10, '1')
 const bf2 = Buffer.from("hello") 
 console.log(bf1.toString());//1111111111
