@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app.3a3f80ad.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"前端性能优化/vue项目优化.md"}'),r={name:"前端性能优化/vue项目优化.md"};function o(s,c,n,_,p,d){return a(),t("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
