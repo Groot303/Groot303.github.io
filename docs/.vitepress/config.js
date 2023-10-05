@@ -39,6 +39,7 @@ export default defineConfig({
                     { text: 'Vite', link: '/Vite/vite概况' },
                     { text: 'Nodejs', link: '/Nodejs/node基础知识' },
                     { text: '项目搭建', link: '/项目搭建/eslint和prettier' },
+                    { text: '性能优化', link: '/前端性能优化/vue项目优化' },
                 ]
             },
             { text: '项目问题', link: '/project/index' },
