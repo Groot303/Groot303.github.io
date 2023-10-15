@@ -206,7 +206,8 @@ export default defineConfig({
                 items: [
                     { text: 'jwt', link: '/project/宿舍系统/jwt' },
                     { text: '刷新页面vuex状态丢失', link: '/project/宿舍系统/刷新页面vuex状态丢失' },
-                    { text: '路由懒加载的原理', link: '/project/宿舍系统/路由懒加载的原理' },
+                    { text: '路由懒加载的原理', link: '/project/宿舍系统/关于路由懒加载' },
+                    { text: 'vue项目权限控制', link: '/project/宿舍系统/vue权限控制' },
 
                 ],
                 // collapsible: true,
