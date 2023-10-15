@@ -12,7 +12,7 @@ let request = axios.create({
 })
 ```
 
-## 添加 token、密钥及，响应的统一基本处理
+## 添加 token、密钥及响应的统一基本处理
 
 ```js
 // axios.js
