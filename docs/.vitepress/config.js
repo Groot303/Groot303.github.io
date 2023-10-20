@@ -193,7 +193,7 @@ export default defineConfig({
             }, {
                 text: '组件库hview-ui',
                 items: [
-                    // { text: '关于组件封装', link: 'project/hview-ui/组件封装' },
+                    { text: '关于组件封装', link: 'project/hview-ui/组件封装' },
                     { text: 'vue3的props类型标注', link: 'project/hview-ui/props' },
                     // { text: 'radio', link: 'project/hview-ui/radio' },
                     // { text: 'card', link: 'project/hview-ui/card' },
