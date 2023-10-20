@@ -1,4 +1,95 @@
-# Node.js 基础知识
+# Node.js 基础知识手册
+
+## 创建buffer对象(类似数组的数据类型)
+
+```js
+let buf_1 = Buffer.alloc(10)// 一个长度就是一个字节
+
+let buf_2 = Buffer.from('hello')
+let buf_3 = Buffer.from([105, 108, 111, 118, 101, 121, 111, 117])
+
+console.log(buf_1[1]) //<Buffer 00 00 00 00 00 00 00 00 00 00>
+console.log(buf_3.toString())//iloveyou
+```
+
+## fs 模块
+
+### 文件操作
+
+#### 文件写入;  同步方法后面加 Sync
+```js
+fs.writeFile(fileName, data, callback)
+fs.writeFileSync(fileName, data, callback)
+```
+#### 追加写入
+```js
+fs.appendFile(fileName, data, callback)
+```
+#### 流式写入
+- 流式写入使用于大文件写入或者频繁写入的场景
+```js 
+let ws = fs.createWriteStream(path)
+
+ws.write('你真帅!')
+
+ws.end()
+```
+
+#### 文件读取;  同步写入后面加 Sync
+```js
+fs.readFile()
+fs.readFileSync(path, callback)
+```
+
+```js
+fs.createReadStream(path, callback)
+```
+
+
+#### 文件移动或重命名
+
+```js
+fs.rename(oldPath, newPath, callback)
+```
+
+#### 文件删除
+
+```js
+fs.unlink(path, callback)
+```
+
+### 文件夹操作
+
+#### 创建文件夹
+
+```js
+fs.mkdir(path, callback)
+
+// 递归创建(创建文件夹和子文件夹)
+fs.mkdir(path, {recursive: true}, callback)
+```
+
+#### 读取文件夹
+
+```js
+fs.readdir(path, callback)
+```
+
+#### 删除文件夹
+
+```js
+fs.rmdir(path, callback)
+```
+
+#### 查看资源状态
+
+```js
+fs.stat(path, (err, data) => { console.log(data) })
+```
+
+### dirname
+
+- 当前文件所在目录下的绝对路径, 一般使用它和文件名拼接成绝对路径.
 
 ## 常用工具模块
 
