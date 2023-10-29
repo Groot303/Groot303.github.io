@@ -29,6 +29,7 @@ export default defineConfig({
                 text: '前端框架',
                 items: [
                     { text: 'Vue', link: '/Vue基础/vue2基础知识' },
+                    { text: 'React', link: '/React/基础知识总结' },
                 ]
             },
 
@@ -127,8 +128,17 @@ export default defineConfig({
                 collapsed: true
             },
 
-            ],
 
+            ],
+            '/React': [{
+                text: 'React基础',
+                items: [
+                    { text: '基础知识总结', link: '/React/基础知识总结' },
+
+                ],
+                collapsible: true,
+                collapsed: true
+            }],
             '/webpack': [{
                 text: 'webpack',
                 items: [
