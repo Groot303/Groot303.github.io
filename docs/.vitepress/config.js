@@ -134,6 +134,7 @@ export default defineConfig({
                 text: 'React基础',
                 items: [
                     { text: '基础知识总结', link: '/React/基础知识总结' },
+                    { text: 'react和vue的区别', link: '/React/react和vue的区别' },
 
                 ],
                 collapsible: true,
