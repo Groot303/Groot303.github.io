@@ -120,6 +120,8 @@ export default defineConfig({
             {
                 text: 'Vue原理',
                 items: [
+                    { text: 'vue源码', link: '/Vue原理/diff算法' },
+
                     { text: 'vue源码', link: '/Vue原理/vue源码' },
                     { text: 'vue的双向数据绑定原理', link: '/Vue原理/vue的双向数据绑定原理' },
                     { text: 'vue3的数据响应式原理', link: '/Vue原理/vue3的数据响应式原理' },
