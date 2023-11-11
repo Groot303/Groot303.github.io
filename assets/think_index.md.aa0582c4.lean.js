@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as n}from"./app.7814b68a.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"think/index.md"}'),a={name:"think/index.md"};function r(o,s,c,i,d,p){return n(),t("div")}const f=e(a,[["render",r]]);export{m as __pageData,f as default};
