@@ -26,6 +26,7 @@
 #### CSRF的预防
 1. 使用token，让用户的每次请求都携带token（攻击者无法获取到token）
 2. 通过设置cookie属性 `Samesite：Strict` Cookie只能由与发出Cookie的网站相同的网站进行访问
+3. 涉及安全问题使用post方法 
 
 ## 跨域
 - 跨域是因为浏览器的同源策略，浏览器阻止客户端和服务端通信的问题

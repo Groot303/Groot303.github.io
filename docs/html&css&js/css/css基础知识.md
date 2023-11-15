@@ -38,7 +38,26 @@ tags:
   - display: table-cell; 相当于td标签，
     - 设置vertical-align，td里面的所有块级非块级元素（除了脱标元素）都会垂直居中，
     - 设置text-align, td里面的所有非块级元素（脱标元素除外）都会水平居中，所以把子元素设置成inline元素就能实现水平居中
-6. grid网格布局：和flex配置一样（元素未知宽高）
+```css
+.parent {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.children {
+  display: inline-block;
+}
+```
+6. grid网格布局：（元素未知宽高）
+```css
+.parent {
+  display: grid;
+}
+.children {
+  align-self: center;
+  justify-self: center;
+}
+```
 7. 父元素设置为弹性盒子，子元素 margin: auto。可让子元素水平垂直居中。
   - margin: auto。只对块级元素有作用，且要设置with。auto是相对于弹性盒子来计算的，普通盒子只有水平方向是弹性的，垂直方向弹性，所以把父元素设置成弹性盒子就能生效。
   
@@ -69,10 +88,11 @@ tags:
 
 ## 定位
 
-- 相对定位relative（不脱离文档流，相对自身位置）
-- 粘性定位sticky（不脱离文档流，相对于浏览器视口本身，常用在实现导航栏）
-- 绝对定位absolute（脱离文档流，相对于距离自己最近的父元素）
-- 固定定位fixed（脱离文档流，相对于浏览器视口本身，其他的和绝对定位一样）
+- 静态定位 static (top, right, z-index 等属性都无效)
+- 相对定位 relative（不脱离文档流，相对自身位置）
+- 粘性定位 sticky（不脱离文档流，相对于浏览器视口本身，可以认为是相对定位和绝对定位的结合，常用在实现导航栏，滑动到距浏览器上端就变成固定定位）
+- 绝对定位 absolute（脱离文档流，绝对定位元素相对于最近的非 static 祖先元素定位）
+- 固定定位 fixed（脱离文档流，相对于浏览器视口本身，其他的和绝对定位一样）
 
 ## z-index什么时候生效
 - opacity 不为0或1
