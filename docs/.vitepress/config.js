@@ -190,10 +190,10 @@ export default defineConfig({
                     { text: 'web安全', link: '/浏览器原理/web安全' },
                 ],
             }],
-            '/项目搭建': [{
+            '/前端工程化': [{
                 text: '项目搭建',
                 items: [
-                    { text: 'eslint和prettier', link: '/项目搭建/eslint和prettier' },
+                    { text: 'eslint和prettier', link: '/前端工程化/eslint和prettier' },
                 ],
             }],
             '/project': [{
