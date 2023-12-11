@@ -39,11 +39,12 @@ export default defineConfig({
                     { text: 'Webpack', link: '/webpack/webpack基本操作' },
                     { text: 'Vite', link: '/Vite/vite概况' },
                     { text: 'Nodejs', link: '/Nodejs/node基础知识' },
-                    { text: '项目搭建', link: '/项目搭建/eslint和prettier' },
+                    { text: '项目搭建', link: '/前端工程化/项目搭建/eslint和prettier' },
                     { text: '性能优化', link: '/前端性能优化/vue项目优化' },
                 ]
             },
             { text: '项目问题', link: '/project/index' },
+            { text: '设计模式', link: '/设计模式/设计模式' },
             { text: '关于知识库', link: '/about/index' },
             { text: '一些有趣的知识', link: '/reprint/css/index' },
             // { text: '生活思考', link: '/think/index' },
@@ -190,12 +191,12 @@ export default defineConfig({
                     { text: 'web安全', link: '/浏览器原理/web安全' },
                 ],
             }],
-            '/前端工程化': [{
-                text: '项目搭建',
-                items: [
-                    { text: 'eslint和prettier', link: '/前端工程化/eslint和prettier' },
-                ],
-            }],
+            // '/项目搭建': [{
+            //     text: '项目搭建',
+            //     items: [
+            //         { text: 'eslint和prettier', link: '/前端工程化/eslint和prettier' },
+            //     ],
+            // }],
             '/project': [{
                 text: '博客',
                 items: [
@@ -236,6 +237,16 @@ export default defineConfig({
                 // collapsible: true,
                 collapsed: true
             },],
+            '/设计模式': [
+                {
+                    text: '设计模式',
+                    items: [
+                        { text: '设计模式', link: '/设计模式/设计模式' },
+                    ],
+                    // collapsible: true,
+                    collapsed: true
+                },
+            ],
             '/reprint': [{
                 text: 'css',
                 items: [
